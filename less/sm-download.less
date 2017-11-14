@@ -1,0 +1,114 @@
+.sm-download {
+    padding: 72px 0 90px 0;
+    background: #e1fffa;
+
+    figure {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    &__image {
+        width: calc(~'41%');
+        max-width: 255px;
+        margin: 0 auto 0 auto;
+    }
+
+    &__content {
+        width: calc(~'57.5%');
+        padding-left: 16px;
+    }
+
+    &__title {
+        margin: 0 0 35px 0;
+        font-family: "Open Sans", sans-serif;
+        font-size: 40px;
+    }
+
+    &__subtitle {
+        margin: 0 0 35px 0;
+    }
+
+    &__action_medium {
+        display: block;
+        white-space: nowrap;
+        .btn_download-windows {
+            margin-right: 32px;
+            width: calc(~'93% / 2 - 16px');
+        }
+        .btn_download-mac {
+            width: calc(~'93% / 2 - 16px');
+        }
+    }
+
+    &__action_small {
+        display: none;
+        .btn_download-windows {
+            margin-right: 32px;
+        }
+    }
+}
+
+.sm-capabilities {
+    padding: 0;
+    margin: 0 0 47px 0;
+    li {
+        padding: 2px 0 3px 54px;
+        margin-bottom: 20px;
+        list-style-type: none;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__create-slideshow {
+        background: url(../images/sm-capabilities-create-slideshow.png) no-repeat 0 50%;
+    }
+    &__join-slide {
+        background: url(../images/sm-capabilities-join-slide.png) no-repeat 0 50%;
+    }
+    &__add-stylish {
+        background: url(../images/sm-capabilities-add-styl.png) no-repeat 1% 50%;
+    }
+    &__adjust-color {
+        background: url(../images/sm-capabilities-adjust-color.png) no-repeat 0 50%;
+    }
+}
+
+
+@media all and (max-width: 768px) {
+    .sm-download {
+        figure {
+            margin-bottom: 30px;
+        }
+        &__title {
+            margin-bottom: 20px;
+            font-size: 28px;
+            text-align: center;
+        }
+        &__subtitle {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        &__action_medium {
+            display: none;
+        }
+        &__action_small {
+            display: block;
+            width: 100%;
+        }
+    }
+    .sm-capabilities {
+        font-size: 16px;
+        li {
+            margin-bottom: 10px;
+            padding: 6px 0 4px 45px;
+        }
+    }
+}
+
+@media all and (max-width: 320px) {
+}

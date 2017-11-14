@@ -1,0 +1,91 @@
+.btn {
+    outline: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    display: inline-block;
+    white-space: nowrap;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+.btn_download-windows {
+    padding: 25px 26px 24px 54px;
+    border-radius: 6px;
+    border: none;
+    background: url(../images/btn-download-windows.png) no-repeat 10% 48% #3581d5;
+    box-sizing: border-box;
+    &:hover {
+        background-color: #1962b2;
+    }
+}
+
+.btn_download-mac {
+    padding: 25px 24px 24px 56px;
+    border-radius: 6px;
+    border: none;
+    background: url(../images/btn-download-mac.png) no-repeat 10% 45% #1962b2;
+    box-sizing: border-box;
+    &:hover {
+        background-color: #3581d5;
+    }
+}
+
+.btn_create-easy {
+    width: calc(~'100% / 2');
+    text-align: center;
+    //padding: 18px 138px 25px 136px;
+    padding: 18px 0 25px 0;
+    border: 1px solid #1962b2;
+    border-radius: 6px 0 0 6px;
+    border-right: none;
+    color: #3670b8;
+    box-sizing: border-box;
+    &:hover {
+        border-color: transparent;
+        background-color: #1962b2;
+        color: #ffffff;
+    }
+}
+
+.btn_create-full {
+    width: calc(~'100% / 2');
+    text-align: center;
+    //padding: 18px 104px 25px 100px;
+    padding: 18px 0 25px 0;
+    border: 1px solid #1962b2;
+    border-left: none;
+    border-radius: 0 6px 6px 0;
+    background-color: transparent;
+    color: #3670b8;
+    box-sizing: border-box;
+    &:hover {
+        border-color: transparent;
+        background-color: #1962b2;
+        color: #ffffff;
+    }
+}
+
+.btn_create-active {
+    border: 1px solid transparent;
+    background-color: #3581d5;
+    color: #ffffff;
+}
+
+
+
+@media all and (max-width: 768px) {
+    .btn_download-windows {
+        width: calc(~'100% / 2 - 16px');
+    }
+
+    .btn_download-mac {
+        width: calc(~'100% / 2 - 16px');
+    }
+}
+
+@media all and (max-width: 320px) {
+
+}

@@ -5,12 +5,10 @@ var browserSync = require('browser-sync').create();
 
 var configs = {
     src: {
-        less: 'less/main.less',
-        scripts: ['./scripts/*.js', '!./scripts/main.js']
+        less: 'less/main.less'
     },
     dist: {
-        css: 'css',
-        scripts: 'scripts/'
+        css: 'css'
     },
     watch: {
         less: 'less/*.less',
@@ -24,8 +22,8 @@ gulp.task('default', ['less'], function() {
         server: "./"
     });
     gulp.watch(configs.watch.html).on('change', browserSync.reload);
-    gulp.watch(configs.watch.less, ['less'])
-    // gulp.watch(configs.watch.scripts, ['scripts'])
+    gulp.watch(configs.watch.scripts).on('change', browserSync.reload);
+    gulp.watch(configs.watch.less, ['less']);
 });
 
 gulp.task('less', function() {
@@ -34,10 +32,3 @@ gulp.task('less', function() {
         .pipe(gulp.dest(configs.dist.css))
         .pipe(browserSync.stream({ match: '**/*.css' }));
 });
-
-// gulp.task('scripts', function() {
-//     return gulp.src(configs.src.scripts)
-//         .pipe(concat('main.js'))
-//         .pipe(gulp.dest(configs.dist.scripts))
-//     // .pipe(browserSync.stream({ match: '**/*.js'}))
-// });
