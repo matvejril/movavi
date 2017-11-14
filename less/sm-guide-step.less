@@ -1,0 +1,132 @@
+.sm-guide-step {
+    padding: 0 0 45px 0;
+    margin: 0;
+    text-align: left;
+
+    &__content {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+
+    figcaption {
+        width: calc(~'58% - 16px');
+    }
+
+    &__image {
+        width: calc(~'42% - 16px');
+        height: auto;
+        max-width: 457px;
+        //align-self: center;
+        align-items: center;
+    }
+
+    &__title {
+        margin: 0 0 26px 0;
+        font-family: "Open Sans", sans-serif;
+        font-size: 34px;
+    }
+
+    &__num {
+        margin-right: 5px;
+        color: #f68263;
+        text-decoration: none;
+        font-style: normal;
+    }
+
+    &__text {
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+        line-height: 1.5;
+        vertical-align: top;
+    }
+
+
+    &__active {
+        //margin: 41px 0 -7px 15px;
+        width: 70%;
+        margin: 41px auto -7px auto;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    &__conclusion {
+        margin: -15px 0 48px 0;
+    }
+
+    &__pagination {
+        display: block;
+        text-decoration: none;
+        color: #3581d5;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+        text-align: center;
+        &:before {
+            content: "^";
+            display: inline-block;
+            padding: 4px 11px 2px 11px;
+            margin-right: 10px;
+            border-radius: 50%;
+            background-color: #3581d5;
+            color: #ffffff;
+        }
+    }
+
+    &:last-child {
+        padding-bottom: 38px;
+    }
+}
+
+.sm-guide-substeps {
+    padding: 43px 0 49px 0;
+    margin-bottom: 43px;
+    background-color: #eeeeee;
+}
+
+
+@media all and (max-width: 768px) {
+    .sm-guide-step {
+        &__title {
+            margin-bottom: 18px;
+            font-size: 23px;
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 1.4;
+        }
+        figcaption {
+            width: calc(~'50% - 16px');
+        }
+        &__image {
+            width: calc(~'50% - 16px');
+        }
+
+        &__conclusion {
+            font-size: 16px;
+            margin: -15px 0 30px 0;
+        }
+        &__pagination {
+            font-size: 16px;
+            text-align: center;
+            &:before {
+                content: "^";
+                display: inline-block;
+                padding: 2px 7px 2px 7px;
+                margin-right: 10px;
+                border-radius: 50%;
+                background-color: #3581d5;
+                color: #ffffff;
+            }
+        }
+        &__active {
+            width: 100%;
+        }
+    }
+}
+
+
+@media all and (max-width: 320px) {
+}

@@ -1,0 +1,47 @@
+.manual {
+    padding: 72px 0 0 0;
+    &__description {
+        padding-left: 15px;
+        margin-bottom: 25px;
+    }
+    &__title {
+        margin: 0 0 17px 0;
+        text-align: center;
+        font-size: 40px;
+    }
+    &__example {
+        margin: 0 0 45px -5px;
+        line-height: 1.5;
+    }
+    &__active {
+        text-align: center;
+    }
+}
+
+
+@media all and (max-width: 768px) {
+    .manual {
+        padding-top: 40px;
+        &__description {
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+        &__title {
+            margin-bottom: 12px;
+            font-size: 28px;
+        }
+        &__example {
+            font-size: 18px;
+            margin: 0 0 30px 0;
+        }
+    }
+}
+
+
+@media all and (max-width: 320px) {
+    .banner {
+        &__content {
+            background-image: none;
+        }
+    }
+}
