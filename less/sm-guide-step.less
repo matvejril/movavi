@@ -44,7 +44,6 @@
         vertical-align: top;
     }
 
-
     &__active {
         //margin: 41px 0 -7px 15px;
         width: 70%;
@@ -78,6 +77,15 @@
     &:last-child {
         padding-bottom: 0;
     }
+
+    &_easy-mode {
+        display: block;
+    }
+
+    &_full-mode {
+        display: none;
+    }
+
 }
 
 .sm-guide-substeps {
@@ -90,7 +98,7 @@
     .sm-guide-step {
         &__title {
             margin-bottom: 18px;
-            font-size: 23px;
+            font-size: 24px;
         }
         &__text {
             font-size: 16px;
@@ -127,5 +135,21 @@
 }
 
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 480px) {
+
+    .sm-guide-step {
+        padding-bottom: 30px;
+        &__content {
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+        }
+        figcaption {
+            width: calc(~'100%');
+        }
+
+        &__image {
+            width: calc(~'100%');
+            margin-bottom: 24px;
+        }
+    }
 }

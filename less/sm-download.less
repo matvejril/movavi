@@ -110,5 +110,29 @@
     }
 }
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 480px) {
+    .sm-download {
+        padding: 52px 0 60px 0;
+        figure {
+            flex-wrap: wrap;
+        }
+        &__image {
+            width: calc(~'100%');
+            margin-bottom: 20px;
+        }
+        &__content {
+            width: calc(~'100%');
+        }
+        &__action_medium {
+            display: none;
+        }
+        &__action_small {
+            .btn_download-windows {
+                margin-right: 0;
+            }
+        }
+    }
+    .sm-capabilities {
+        margin-bottom: 0;
+    }
 }

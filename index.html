@@ -80,13 +80,14 @@
         </div>
         <div class="sm-guide-step">
             <div class="container">
-                <h3 class="sm-guide-step__title"><i class="sm-guide-step__num">3.</i>Make a Slideshow</h3>
+                <h3 class="sm-guide-step__title" id="step3"><i class="sm-guide-step__num">3.</i>Make a Slideshow</h3>
                 <div class="sm-guide-step__active">
-                    <button class="btn btn_create-easy btn_create-active">Easy Mode</button><button class="btn btn_create-full">Full Feature Mode</button>
+                    <button class="btn btn_create-easy btn_create-active to-easy">Easy Mode</button><button class="btn btn_create-full to-full">Full Feature Mode</button>
                 </div>
             </div>
         </div>
-        <div class="sm-guide-step sm-guide-substeps">
+
+        <div class="sm-guide-step sm-guide-substeps sm-guide-step_easy-mode">
             <div class="container">
                 <div class="sm-guide-step">
                     <h3 class="sm-guide-step__title"><i class="sm-guide-step__num">3.1.</i>Upload Photos</h3>
@@ -134,9 +135,57 @@
                     </figure>
                 </div>
                 <p class="sm-guide-step__conclusion">Your photo movie is almost ready. Go to Step 4 to learn how to export your slideshow.</p>
-                <a class="sm-guide-step__pagination" href="#">See Full Feature Mode</a>
+                <a class="sm-guide-step__pagination to-full" href="#step3">See Full Feature Mode</a>
             </div>
         </div>
+
+        <div class="sm-guide-step sm-guide-substeps sm-guide-step_full-mode">
+            <div class="container">
+                <div class="sm-guide-step">
+                    <h3 class="sm-guide-step__title"><i class="sm-guide-step__num">3.1.</i>Add Your Files to the Program</h3>
+                    <figure class="sm-guide-step__content">
+                        <figcaption>
+                            <p class="sm-guide-step__text">
+                                Click Add Media Files and browse through your photos to choose the ones you
+                                want to add to your slideshow. You can also upload videos if you like. All the files
+                                you’ve chosen will be added on the timeline at the bottom of the program window.
+                            </p>
+                        </figcaption>
+                        <img class="sm-guide-step__image" src="images/upload-photo.jpg" alt="upload-photo">
+                    </figure>
+                </div>
+                <div class="sm-guide-step">
+                    <h3 class="sm-guide-step__title"><i class="sm-guide-step__num">3.2.</i>Add Transitions</h3>
+                    <figure class="sm-guide-step__content">
+                        <figcaption>
+                            <p class="sm-guide-step__text">
+                                Now you can add fades to your movie to make the transition between images
+                                smooth and appropriate in style for the content. Go to the Transitions tab, select a
+                                category that appeals to you and pick the style you like best. To add a transition,
+                                simply drag and drop it between two videos on the timeline.
+                            </p>
+                        </figcaption>
+                        <img class="sm-guide-step__image" src="images/add-transitions.jpg" alt="add-transitions">
+                    </figure>
+                </div>
+                <div class="sm-guide-step">
+                    <h3 class="sm-guide-step__title"><i class="sm-guide-step__num">3.3.</i>Complete Your Slideshow Music and Titles</h3>
+                    <figure class="sm-guide-step__content">
+                        <figcaption>
+                            <p class="sm-guide-step__text">
+                                You can also add music to make your movie more engaging. Click Add Media Files
+                                and upload the soundtrack of your choice. You can also click Sample audio to use
+                                one of the built-in audio files.
+                            </p>
+                        </figcaption>
+                        <img class="sm-guide-step__image" src="images/add-music.jpg" alt="add-music">
+                    </figure>
+                </div>
+                <p class="sm-guide-step__conclusion">Your photo movie is almost ready. Go to Step 4 to learn how to export your slideshow.</p>
+                <a class="sm-guide-step__pagination to-easy" href="#step3">See Easy Mode</a>
+            </div>
+        </div>
+
         <div class="sm-guide-step">
             <div class="container">
                 <h3 class="sm-guide-step__title"><i class="sm-guide-step__num">4.</i>Save Your Clip</h3>
@@ -188,7 +237,6 @@
     </div>
 </div>
 
-
 <div class="other-guides">
     <div class="container">
         <h2 class="other-guides__title">See Other useful How-To Guides</h2>
@@ -200,7 +248,6 @@
         </ul>
     </div>
 </div>
-
 
 <div class="user-question">
     <div class="container">
@@ -223,7 +270,6 @@
         </div>
     </div>
 </div>
-
 
 <div class="footer"></div>
 </body>

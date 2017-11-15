@@ -21,7 +21,6 @@
     }
 }
 
-
 @media all and (max-width: 768px) {
     .sm-guide {
         padding-top: 40px;
@@ -40,11 +39,18 @@
     }
 }
 
-
-@media all and (max-width: 320px) {
+@media all and (max-width: 480px) {
     .sm-guide {
         &__content {
             background-image: none;
+        }
+        &__example {
+            font-size: 16px;
+        }
+        &__action {
+            .btn_download-windows {
+                margin-right: 0;
+            }
         }
     }
 }
