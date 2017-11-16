@@ -876,6 +876,7 @@ template {
   text-align: center;
 }
 .sm-guide-step {
+  position: relative;
   padding: 0 0 45px 0;
   margin: 0;
   text-align: left;
@@ -977,15 +978,6 @@ template {
     font-size: 16px;
     text-align: center;
   }
-  .sm-guide-step__pagination:before {
-    content: "^";
-    display: inline-block;
-    padding: 2px 7px 2px 7px;
-    margin-right: 10px;
-    border-radius: 50%;
-    background-color: #3581d5;
-    color: #ffffff;
-  }
   .sm-guide-step__active {
     width: 100%;
   }
@@ -1005,8 +997,14 @@ template {
     width: calc(100%);
     margin-bottom: 24px;
   }
+  .sm-guide-step__active {
+    width: 100%;
+    margin-bottom: -30px;
+    margin-left: -13px;
+  }
 }
 .btn {
+  position: relative;
   outline: none;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
@@ -1074,6 +1072,14 @@ template {
   background-color: #3581d5;
   color: #ffffff;
 }
+.btn_create-active::after {
+  content: '';
+  position: absolute;
+  right: 45%;
+  bottom: -39px;
+  border: 20px solid transparent;
+  border-bottom: 20px solid #eeeeee;
+}
 @media all and (max-width: 768px) {
   .btn_download-windows {
     width: calc(100% / 2 - 16px);
@@ -1091,6 +1097,39 @@ template {
   }
   .btn_download-mac {
     width: calc(100%);
+  }
+  .btn_create-easy {
+    background-color: #f6f6f6;
+    color: #9d9d9d;
+    border: none;
+    border-radius: 0 6px 0 0;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  .btn_create-easy:hover {
+    background-color: #f6f6f6;
+    color: #000000;
+  }
+  .btn_create-full {
+    width: calc(50% - 5px);
+    right: -25px;
+    background-color: #f6f6f6;
+    color: #9d9d9d;
+    border: none;
+    border-radius: 6px 0 0 0;
+    font-size: 16px;
+  }
+  .btn_create-full:hover {
+    background-color: #f6f6f6;
+    color: #000000;
+  }
+  .btn_create-active {
+    background-color: #eeeeee;
+    color: #000000;
+    font-weight: bold;
+  }
+  .btn_create-active::after {
+    display: none;
   }
 }
 body {

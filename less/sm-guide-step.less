@@ -1,4 +1,5 @@
 .sm-guide-step {
+    position: relative;
     padding: 0 0 45px 0;
     margin: 0;
     text-align: left;
@@ -19,7 +20,6 @@
         width: calc(~'42% - 16px');
         height: auto;
         max-width: 457px;
-        //align-self: center;
         align-items: center;
     }
 
@@ -45,7 +45,6 @@
     }
 
     &__active {
-        //margin: 41px 0 -7px 15px;
         width: 70%;
         margin: 41px auto -7px auto;
         text-align: center;
@@ -85,7 +84,6 @@
     &_full-mode {
         display: none;
     }
-
 }
 
 .sm-guide-substeps {
@@ -118,15 +116,6 @@
         &__pagination {
             font-size: 16px;
             text-align: center;
-            &:before {
-                content: "^";
-                display: inline-block;
-                padding: 2px 7px 2px 7px;
-                margin-right: 10px;
-                border-radius: 50%;
-                background-color: #3581d5;
-                color: #ffffff;
-            }
         }
         &__active {
             width: 100%;
@@ -134,9 +123,7 @@
     }
 }
 
-
 @media all and (max-width: 480px) {
-
     .sm-guide-step {
         padding-bottom: 30px;
         &__content {
@@ -146,10 +133,14 @@
         figcaption {
             width: calc(~'100%');
         }
-
         &__image {
             width: calc(~'100%');
             margin-bottom: 24px;
+        }
+        &__active {
+            width: 100%;
+            margin-bottom: -30px;
+            margin-left: -13px;
         }
     }
 }

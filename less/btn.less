@@ -1,4 +1,5 @@
 .btn {
+    position: relative;
     outline: none;
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
@@ -70,15 +71,21 @@
     border: 1px solid transparent;
     background-color: #3581d5;
     color: #ffffff;
+    &::after {
+        content: '';
+        position: absolute;
+        right: 45%;
+        bottom: -39px;
+        border: 20px solid transparent;
+        border-bottom: 20px solid #eeeeee;
+    }
 }
-
 
 @media all and (max-width: 768px) {
     .btn_download-windows {
         width: calc(~'100% / 2 - 16px');
         background-position-x: calc(~'50% - 46px');
     }
-
     .btn_download-mac {
         width: calc(~'100% / 2 - 16px');
         background-position-x: calc(~'50% - 46px');
@@ -93,5 +100,40 @@
 
     .btn_download-mac {
         width: calc(~'100%');
+    }
+
+    .btn_create-easy {
+        background-color: #f6f6f6;
+        color: #9d9d9d;
+        border: none;
+        border-radius: 0 6px 0 0;
+        font-size: 16px;
+        box-sizing: border-box;
+        &:hover {
+            background-color: #f6f6f6;
+            color: #000000;
+        }
+    }
+    .btn_create-full {
+        width: calc(~'50% - 5px');
+        right: -25px;
+        background-color: #f6f6f6;
+        color: #9d9d9d;
+        border: none;
+        border-radius: 6px 0 0 0;
+        font-size: 16px;
+        &:hover {
+            background-color: #f6f6f6;
+            color: #000000;
+        }
+    }
+
+    .btn_create-active {
+        background-color: #eeeeee;
+        color: #000000;
+        font-weight: bold;
+        &::after {
+            display: none;
+        }
     }
 }
