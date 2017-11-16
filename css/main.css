@@ -1128,6 +1128,9 @@ template {
     color: #000000;
     font-weight: bold;
   }
+  .btn_create-active:hover {
+    background-color: #eeeeee;
+  }
   .btn_create-active::after {
     display: none;
   }
